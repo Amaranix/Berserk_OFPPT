@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: rgb(68, 137, 241);
+    border-bottom:  rgb(255, 255, 255);
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px rgb(107, 63, 63);
+    background-color: rgb(30, 54, 52);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+#iop3{
+    background-image:url("guts\ back.jpg");height: 1300px;width: 100%;
+    background-size: cover ;
+}
+
+#hu{
+    background-color:rgb(0, 0, 0);
+    position: absolute;
+    padding-left: 10px;
+    line-height: 1.5;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    color:#eee;
+    width: 1000px;
+    right: 10rem;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px rgb(0, 132, 255);
+
+}
+
+#hu2{
+    background-color:rgb(0, 0, 0);
+    position: absolute;
+    padding-left: 10px;
+    line-height: 1.5;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    color:#eee;
+    width: 1000px;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 10px;
+    right:10rem;
+    box-shadow: 0px 0px 8px rgb(0, 132, 255);
+
+}
+
+#mlop{
+    background-color: black;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-shadow: 2px 1px 5px #eee;
+    width: 400px;
+    box-shadow: 0px 0px 8px rgb(0, 132, 255);
+
+}
